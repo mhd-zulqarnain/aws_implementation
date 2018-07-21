@@ -10,8 +10,8 @@ class Auth{
 
 
     companion object {
-        val userPoolId = "us-east-1_C5VoGDmik"
-        val clientId = "bjgplsvn6neuhn3erlovrcro3"
+        val userPoolId = "CLINT_ID"
+        val clientId = "CLINT_KEY"
         val cognitoRegion = Regions.US_EAST_1
         val clientSecret = null
 
