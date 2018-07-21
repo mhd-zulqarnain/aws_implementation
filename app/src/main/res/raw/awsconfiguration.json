@@ -2,7 +2,7 @@
   "CredentialsProvider": {
     "CognitoIdentity": {
       "Default": {
-        "PoolId": "us-east-1_C5VoGDmik",
+        "PoolId": "keys",
         "Region": "US_EAST_1"
       }
     }
@@ -13,8 +13,8 @@
   "CognitoUserPool": {
     "Default": {
       "AppClientSecret": "null",
-      "AppClientId": "bjgplsvn6neuhn3erlovrcro3",
-      "PoolId": "us-east-1_C5VoGDmik",
+      "AppClientId": "keys",
+      "PoolId": "keys",
       "Region": "US_EAST_1"
     }
   }
