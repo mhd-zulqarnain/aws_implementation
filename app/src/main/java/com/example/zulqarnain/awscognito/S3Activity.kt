@@ -36,7 +36,7 @@ class S3Activity : AppCompatActivity() {
 
     fun uploadWithTransferUtility() {
 
-        val credentials = BasicAWSCredentials("AKIAI5RM2LFIXLLLPT2A","Q30223RmelAVPAf+uR6Aj7mw7ocwy0VX4BTCKn0d")
+        val credentials = BasicAWSCredentials("SEC_KEY","ACCESS_KEY")
         val s3Client = AmazonS3Client(credentials)
         val transferUtility = TransferUtility.builder()
                 .context(this.applicationContext)
