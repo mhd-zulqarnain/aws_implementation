@@ -20,7 +20,7 @@ import android.widget.Button
 import android.widget.EditText
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity1 : AppCompatActivity() {
 
     private val DEVICE_STORAGE_PERMISSION = 9
     val userAttributes: CognitoUserAttributes = CognitoUserAttributes()
