@@ -13,15 +13,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
-        </activity>
+        <activity android:name=".MainActivity1" />
 
         <service
             android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
             android:enabled="true" />
 
-        <activity android:name=".S3Activity">
+        <activity android:name=".S3Activity"></activity>
+        <activity android:name=".FacebookAuth">
+
+        </activity>
+        <activity android:name=".FacebookSample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

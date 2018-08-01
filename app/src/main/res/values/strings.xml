@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AwsCognito</string>
+    <string name="facebook_app_id">252953165503952</string>
+    <string name="fb_login_protocol_scheme">fb252953165503952</string>
 </resources>

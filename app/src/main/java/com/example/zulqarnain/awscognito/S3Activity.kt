@@ -50,10 +50,11 @@ class S3Activity : AppCompatActivity() {
                     var path = getImageFilePath(this, mImagePath!!)
                     println("the file path " + path)
                     var fileName =getFileName(this, mImagePath!!)
-                    
+
                     img_name.setText(fileName)
                     uploadObserver = transferUtility.upload("joviparks/profile_picture",
-                            "Myfi1",  File(path))
+                            "Myfi1e2",  File(path))
+
                     uploadObserver.setTransferListener(object : TransferListener {
                     override fun onStateChanged(id: Int, state: TransferState) {
                         if (TransferState.COMPLETED == state) {
@@ -61,7 +62,6 @@ class S3Activity : AppCompatActivity() {
                             println("the object file "+state+" the int id "+id)
                         }
                     }
-
                     override fun onProgressChanged(id: Int, bytesCurrent: Long, bytesTotal: Long) {
                         val percentDonef = bytesCurrent.toFloat() / bytesTotal.toFloat() * 100
                         val percentDone = percentDonef.toInt()
@@ -71,6 +71,7 @@ class S3Activity : AppCompatActivity() {
                     override fun onError(id: Int, ex: Exception) {
                         // Handle errors
                         Toast.makeText(applicationContext, "error " + ex, Toast.LENGTH_SHORT).show()
+                        println("exception occur "+ex)
                     }
 
                 })
@@ -85,7 +86,7 @@ class S3Activity : AppCompatActivity() {
     }
 
     fun addImage(v: View) {
-        val intent = Intent()
+        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE )
         intent.type = "image/*"
         intent.action = Intent.ACTION_GET_CONTENT
         startActivityForResult(Intent.createChooser(intent, "Select an image"), PICKIMGREQUEST)
