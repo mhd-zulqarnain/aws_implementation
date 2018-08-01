@@ -10,7 +10,7 @@ class Constants private constructor() {
     companion object {
         const val STATIC_MOVIES_BASE_URL = "https://"
 
-        const val USER_POOL_ID = "us-east-1_C5VoGDmik"
+        const val USER_POOL_ID = "us-east-"******"
         const val APP_CLIENT_ID = "******
         const val ACCESSS_KEY = ""******"
         const val SECRETE_KEY = ""******"******"
