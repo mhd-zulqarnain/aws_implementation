@@ -90,7 +90,7 @@ class FacebookAuth : AppCompatActivity() {
 
         private var credentialsProvider: CognitoCachingCredentialsProvider = CognitoCachingCredentialsProvider(
                 this@FacebookAuth,
-                "us-east-1:8cc8f25e-cf33-4860-9f1a-694e8856690f",
+                "us--cf33-48f",
                 Regions.US_EAST_1)
 
         override fun doInBackground(vararg params:  String): CognitoCachingCredentialsProvider {
